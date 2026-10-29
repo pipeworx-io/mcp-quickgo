@@ -1,0 +1,58 @@
+[
+  {
+    "name": "search_terms",
+    "description": "QuickGO (EBI) — search Gene Ontology (GO) terms by keyword. Returns matching GO terms (id + name) for a free-text query like \"apoptosis\". Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text keyword to search GO terms, e.g. \"apoptosis\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max results (default 15, max 100)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_term",
+    "description": "QuickGO (EBI) — get a single Gene Ontology (GO) term by id. Returns its name, aspect (biological_process|molecular_function|cellular_component), definition, synonyms, and obsolete flag. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "A GO id, e.g. \"GO:0006915\"."
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "gene_annotations",
+    "description": "QuickGO (EBI) — list the Gene Ontology (GO) annotations for a gene/protein, identified by UniProt accession (e.g. \"P04637\"). Returns GO ids, names, aspect, evidence, and taxon. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "gene_product_id": {
+          "type": "string",
+          "description": "A UniProt accession, e.g. \"P04637\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max annotations (default 25, max 100)."
+        }
+      },
+      "required": [
+        "gene_product_id"
+      ]
+    }
+  }
+]
