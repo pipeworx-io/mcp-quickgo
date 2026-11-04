@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-quickgo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "QuickGO (EBI) MCP — Gene Ontology browser.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "quickgo",
     "gatewaySlug": "quickgo",
-    "sourceHash": "v1-7c19ab3b45e756f3834986a2792788dd2f409b5c0817f7bbc52ce9a093dfad33",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-fb679610089ad080bc8318af1065b49c396e6ef328986fe4592cf30b0b8d1eaa",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
